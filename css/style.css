@@ -567,6 +567,20 @@ a{
 	text-shadow: -1px -1px 1px #d7e4bf;
 }
 
+.lt-ie9 .b-content-list-item-info_rubl{
+	text-indent: -9999px;
+	display: none;
+}
+
+.lt-ie9 .b-content-list-item-info_price:after{
+	display: inline-block;
+	content: 'Руб.';
+		font-size: 27px;
+	color: #90bd5c;
+	font-weight: normal;
+	text-shadow: -1px -1px 1px #d7e4bf;
+}
+
 .b-content-list-item-info_more{
 	padding: 35px 20px 20px;
 }
