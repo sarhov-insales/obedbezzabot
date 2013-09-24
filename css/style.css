@@ -662,3 +662,9 @@ a{
 	font-size: 15px;
 }
 
+.b-item-excerpt{
+	width: 55%;
+	font-style: normal;
+	color: #030303;
+	margin-left: 25px;
+}
