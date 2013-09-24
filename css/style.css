@@ -26,10 +26,10 @@ a{
 
 .bordered{
 	background: 
-	url('border-vertical.png') 15px 0 repeat-y,
-	url('border-vertical.png') calc(100% - 15px) 0 repeat-y,
-	url('border-horizontal.png') 0 15px repeat-x,
-	url('border-horizontal.png') 0 calc(100% - 15px) repeat-x
+	url('border-vertical.png') 20px 0 repeat-y,
+	url('border-vertical.png') calc(100% - 20px) 0 repeat-y,
+	url('border-horizontal.png') 0 20px repeat-x,
+	url('border-horizontal.png') 0 calc(100% - 20px) repeat-x
 	;
 }
 
@@ -137,8 +137,6 @@ a{
 	display: inline-block;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: #9c0 url('sprite.png') 0 0 no-repeat;
-	margin-left: 15px;
 	vertical-align: middle;
 }
 
@@ -173,11 +171,10 @@ a{
 
 .cart:before{
 	content:'';
-	width: 70px;
-	height: 70px;
 	position: absolute;
 	display: block;
-	background: #9c0;
+	 background:url("sprite.png") top left no-repeat;
+	width:70px; height:65px; background-position:-1066px -10px; 
 	right: -82px;
 	top: -20px;
 }
@@ -208,9 +205,16 @@ a{
 	margin-left: 80px;
 }
 
+.nav-item{
+	text-shadow: 0 0 1px #898888;
+}
+
 .nav-item:hover, .nav-item.active{
 	color: #fff;
-	text-decoration: underline;
+}
+
+.b-top-menu_item:hover{
+	color: #030303;
 }
 
 .b-content-not-main{
@@ -234,11 +238,9 @@ a{
 .b-aside-menu_wrap:before{
 	content: '';
 	position: absolute;
-	height: 115px;
 	width: 62px;
 	right: 65px;
 	bottom: -70px;
-	background: #9c0;
 }
 
 .lt-ie9 .b-aside-menu_wrap{
@@ -289,8 +291,8 @@ a{
 }
 
 .b-banner{
-	width: 73%;
-	padding: 30px;
+	width: 72%;
+	padding: 33px;
 }
 
 .b-banner_url{
@@ -300,13 +302,47 @@ a{
 
 .b-banner-url_img{
 	display: block;
+	margin: 0 auto;
+}
+
+.caroufredsel_wrapper{
+	margin: 0 auto !important;
+}
+
+.carousel-switcher{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	margin-top: -15px;
+	text-decoration: none;
+	overflow: hidden;
+	display: block;
+	text-indent: -9999px;
+	background: #9c0;
+}
+
+.b-banner #prev{
+	left: 55px;
+}
+
+.b-banner #next{
+	right: 55px;
+}
+
+#next-car{
+	right: -15px;
+}
+
+#prev-car{
+	left: -15px;
 }
 
 .b-carousel-main-page_wrapper{
 	margin-bottom: 30px;
 	height: 220px;
 	width: 100%;
-	padding: 30px;
+	padding: 35px;
 	background-image: 
 	url('carousel-vertical-border.png'),
 	url('carousel-vertical-border.png'),
@@ -336,7 +372,7 @@ a{
 
 .b-carousel-main-page_item{
 	text-align: center;
-	width: 165px;
+	width: 160px;
 	overflow: hidden;
 }
 
@@ -496,13 +532,13 @@ a{
 
 .b-content-list-item_images{
 	width: 60%;
-	margin-left: 10px;
-	padding: 40px;
+	padding: 33px;
+	margin-left: 20px;
 	background-position: 
-	25px 0,
-	calc(100% - 25px) 0,
-	0 25px,
-	0 calc(100% - 25px);
+	20px 0,
+	calc(100% - 20px) 0,
+	0 20px,
+	0 calc(100% - 20px);
 }
 
 .b-content-list-item-images_img{
@@ -625,7 +661,7 @@ a{
 }
 
 .b-item-info_properties{
-	padding-top: 20px;
+	padding-top: 15px;
 	margin-top: 20px;
 }
 
@@ -668,3 +704,26 @@ a{
 	color: #030303;
 	margin-left: 25px;
 }
+.b-aside-menu_wrap:before, .sprite{ background:url("sprite.png") top left no-repeat; }
+.b-aside-menu_wrap:before{ width:57px; height:122px; background-position:-10px -10px; }
+.b-aside-menu_wrap:hover:before{ width:57px; height:122px; background-position:-77px -10px; }
+.prevo{ width:37px; height:39px; background-position:-144px -10px; }
+.prevo:hover{ width:37px; height:39px; background-position:-191px -10px; }
+.foot-vk{ width:70px; height:70px; background-position:-238px -10px; }
+.foot-vk:hover{ width:70px; height:70px; background-position:-325px -10px; }
+.foot-fb{ width:75px; height:73px; background-position:-412px -10px; }
+.foot-fb:hover{ width:75px; height:73px; background-position:-497px -10px; }
+.nexto{ width:27px; height:39px; background-position:-582px -10px; }
+.nexto:hover{ width:27px; height:39px; background-position:-619px -10px; }
+.foot-tw{ width:77px; height:72px; background-position:-656px -10px; }
+.foot-tw:hover{ width:77px; height:72px; background-position:-743px -10px; }
+.buy-button{ width:108px; height:38px; background-position:-830px -10px; }
+.buy-button:hover{ width:108px; height:38px; background-position:-948px -10px; }
+.cart:hover:before{ width:70px; height:65px; background-position:-1146px -10px; }
+.top-vk{ width:70px; height:70px; background-position:-1226px -10px; }
+.top-vk:hover{ width:70px; height:70px; background-position:-1318px -10px; }
+.top-fb{ width:70px; height:70px; background-position:-1410px -10px; }
+.top-fb:hover{ width:70px; height:70px; background-position:-1501px -10px; }
+.top-tw{ width:70px; height:70px; background-position:-1592px -10px; }
+.top-tw:hover{ width:70px; height:70px; background-position:-1685px -10px; }
+

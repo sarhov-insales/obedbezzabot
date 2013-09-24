@@ -16,6 +16,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
         <script src="js/libs/modernizr.min.js"></script>
+        <script src="js/libs/carousel.js"></script>
+        <script src="js/fancybox.js"></script>
     </head>
     <body class="main-page">
 
@@ -35,9 +37,9 @@
                     </div> <!-- b-account -->
 
                     <div class="b-social-bt fr cr">
-                        <a href="#" class="b-social-bt_url b-social-bt_url-tw socbtn">Мы в Твиттере</a>
-                        <a href="#" class="b-social-bt_url b-social-bt_url-fb socbtn">Мы в фейсбуке</a>
-                        <a href="#" class="b-social-bt_url b-social-bt_url-vk socbtn">Мы в Вконтакте</a>
+                        <a href="#" class="b-social-bt_url top-tw socbtn sprite">Мы в Твиттере</a>
+                        <a href="#" class="b-social-bt_url top-fb sprite socbtn">Мы в фейсбуке</a>
+                        <a href="#" class="b-social-bt_url top-vk socbtn sprite">Мы в Вконтакте</a>
                     </div> <!-- b-social-bt -->
 
                     <div class="b-phone fr">
@@ -80,74 +82,120 @@
                                 </div>
                             </section> <!-- b-asid-menu -->
 
-                            <div class="b-banner bordered fr">
+                            <div class="b-banner bordered fr rel">
 
                                 <figure class="b-banner_wrap ">
-                                    <a href="#" class="b-banner_url">
+                                    <a href="#" class="b-banner_url fl">
+                                        <img src="banner.jpg" alt="Banner" class="b-banner-url_img gl-image">
+                                    </a>                                   
+                                     <a href="#" class="b-banner_url fl">
+                                        <img src="banner.jpg" alt="Banner" class="b-banner-url_img gl-image">
+                                    </a>                                    
+                                    <a href="#" class="b-banner_url fl">
                                         <img src="banner.jpg" alt="Banner" class="b-banner-url_img gl-image">
                                     </a>
                                 </figure> <!-- b-banner_wrap -->
+                                <a href="#" id="prev" class="carousel-switcher sprite prevo">Назад</a>
+                                <a href="#" id="next" class="carousel-switcher sprite nexto">Вперед</a>
+                                <script>
+                                    $(".b-banner_wrap").carouFredSel({
+                                            auto : true,    
+                                            prev : "#prev",
+                                            next : "#next"
+                                        });
+                                </script>
+
                             </div> <!-- b-banner -->
                         </div>  <!-- b-main-page-box -->
 
                         <div class="b-carousel-main-page_wrapper cb bordered rel">
                             <nav class="b-carousel_main-page cf">
 
-                                <div class="b-carousel-main-page_item fl">                
-                                    <a href="#" class="b-carousel-main-page-item_img-url">
-                                        <img src="carousel-image.png" alt="" class="b-carousel-main-page-img">
-                                    </a>    
-                                    <a href="" class="b-carousel-main-page-item_title">
-                                       Первое
-                                    </a>
-                                </div>  <!-- b-coursel-main-page_item -->
-                                  
-                                <div class="b-carousel-main-page_item fl">                
-                                    <a href="#" class="b-carousel-main-page-item_img-url">
-                                        <img src="carousel-image2.png" alt="" class="b-carousel-main-page-img">
-                                    </a>    
-                                    <a href="" class="b-carousel-main-page-item_title">
-                                       Второе
-                                    </a>
-                                </div>  <!-- b-coursel-main-page_item -->
-                                  
-                                <div class="b-carousel-main-page_item fl">                
-                                    <a href="#" class="b-carousel-main-page-item_img-url">
-                                        <img src="carousel-image1.png" alt="" class="b-carousel-main-page-img">
-                                    </a>    
-                                    <a href="" class="b-carousel-main-page-item_title">
-                                       Закуски / Салаты
-                                    </a>
-                                </div>  <!-- b-coursel-main-page_item -->
-                                  
-                                <div class="b-carousel-main-page_item fl">                
-                                    <a href="#" class="b-carousel-main-page-item_img-url">
-                                        <img src="carousel-image3.png" alt="" class="b-carousel-main-page-img">
-                                    </a>    
-                                    <a href="" class="b-carousel-main-page-item_title">
-                                       Напитки
-                                    </a>
-                                </div>  <!-- b-coursel-main-page_item -->
-                                  
-                                <div class="b-carousel-main-page_item fl">                
-                                    <a href="#" class="b-carousel-main-page-item_img-url">
-                                        <img src="carousel-image5.png" alt="" class="b-carousel-main-page-img">
-                                    </a>    
-                                    <a href="" class="b-carousel-main-page-item_title">
-                                       Праздничные блюда
-                                    </a>
-                                </div>  <!-- b-coursel-main-page_item -->
-                                  
-                                <div class="b-carousel-main-page_item fl">                
-                                    <a href="#" class="b-carousel-main-page-item_img-url">
-                                        <img src="carousel-image6.png" alt="" class="b-carousel-main-page-img">
-                                    </a>    
-                                    <a href="" class="b-carousel-main-page-item_title">
-                                       Сеты
-                                    </a>
-                                </div>  <!-- b-coursel-main-page_item -->
+                               <div id="car"> 
 
+                                <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Первое
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                   
+                                <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Первое
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                   
+                                <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Первое
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                     
+                                   <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image2.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Второе
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                     
+                                   <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image1.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Закуски / Салаты
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                     
+                                   <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image3.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Напитки
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                     
+                                   <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image5.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Праздничные
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                                     
+                                   <div class="b-carousel-main-page_item fl">                
+                                       <a href="#" class="b-carousel-main-page-item_img-url">
+                                           <img src="carousel-image6.png" alt="" class="b-carousel-main-page-img">
+                                       </a>    
+                                       <a href="" class="b-carousel-main-page-item_title">
+                                          Сеты
+                                       </a>
+                                   </div>  <!-- b-coursel-main-page_item -->
+                               </div>  <!-- #car -->
                             </nav> <!-- b-carousel_main-page -->
+
+                                <a href="#" id="prev-car" class="carousel-switcher prevo sprite">Назад</a>
+                                <a href="#" id="next-car" class="carousel-switcher nexto sprite"> Вперед</a>
+                                <script>
+                                    $("#car").carouFredSel({
+                                            auto : false,    
+                                            prev : "#prev-car",
+                                            next : "#next-car"
+                                        });
+                                </script>
                         </div> <!-- b-carousel-main-page_wrapper -->
 
                     </div> <!-- b-content -->
@@ -211,9 +259,9 @@
                     </section> <!-- b-main-foot_box -->
 
                     <section class="b-main-foot_box b-main-foot-box_social box-link fr">
-                       <a href="#" class="fl b-main-foot-box_social-bt socbtn b-main-foot-box_social-bt-tw"></a>
-                       <a href="#" class="fl b-main-foot-box_social-bt socbtn b-main-foot-box_social-bt-fb"></a>
-                       <a href="#" class="fl b-main-foot-box_social-bt socbtn b-main-foot-box_social-bt-vk"></a>
+                       <a href="#" class="fl b-main-foot-box_social-bt socbtn foot-tw sprite"></a>
+                       <a href="#" class="fl b-main-foot-box_social-bt socbtn foot-fb sprite"></a>
+                       <a href="#" class="fl b-main-foot-box_social-bt socbtn foot-vk sprite"></a>
                     </section> <!-- b-main-foot_box -->
 
                     <div class="b-main-foot_postfoot cb"> 
