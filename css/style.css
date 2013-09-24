@@ -38,12 +38,14 @@ a{
 }
 
 
-.t-bordered-mini{
-	background:url('bordered-light-mini.png') 0 0 repeat-x;
-}
-
 .b-bordered-mini{
 	background:url('bordered-light-mini.png') 0 100% repeat-x;
+}
+
+.both-bordered-mini{
+	background:
+	url('bordered-light-mini.png') 0 0 repeat-x,
+	url('bordered-light-mini.png') 0 100% repeat-x;
 }
 
 .buy-button{
@@ -567,6 +569,14 @@ a{
 	text-shadow: -1px -1px 1px #d7e4bf;
 }
 
+.b-item-info_buyzone{
+	padding-bottom: 20px;
+}
+
+.b-item-info_price{
+	padding: 10px 20px;
+}
+
 .lt-ie9 .b-content-list-item-info_rubl{
 	text-indent: -9999px;
 	display: none;
@@ -583,5 +593,51 @@ a{
 
 .b-content-list-item-info_more{
 	padding: 35px 20px 20px;
+}
+
+.b-item-info_more{
+	padding: 0 25px 0 0;
+}
+
+.b-item-info_ready-time{
+	width: 104px;
+	height: 84px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	background: transparent url('ready-time.png') 0 0 no-repeat;
+	font-family: five-minutes, sans-serif;
+}
+
+.b-item-info-ready-time_number{
+	font-size: 34px;
+	padding: 5px 0 0 5px;
+	margin: 0;		
+}
+
+.b-item-info-ready-time_text{
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.b-item-info-more_url{
+	padding: 0;
+}
+
+.b-item-info_properties{
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.instructions{
+	display: block;
+	max-width: 10px 0;
+	color: #62a700;
+	font-size: 18px;
+	text-decoration: none;
+	padding-bottom: 2px;
+	font-weight: normal;
+	margin-left: 20px;
+	background: transparent url('instructions.png') 3px 100% no-repeat;
 }
 
