@@ -641,3 +641,24 @@ a{
 	background: transparent url('instructions.png') 3px 100% no-repeat;
 }
 
+.b-item-info_food{
+	padding: 20px;
+}
+
+.b-item-info-food_table{
+	width: 100%;
+}
+
+.b-item-info-food_table th{
+	color: #62a700;
+	font-size: 15px;
+	padding-bottom: 5px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.b-item-info-food_table td{
+	font-style: italic;
+	font-size: 15px;
+}
+
